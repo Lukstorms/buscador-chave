@@ -9,7 +9,6 @@ class MyFrame(wx.Frame):
 
         self.panel = wx.Panel(self)
         self.data_file_picker = self.create_file_picker("Select Data File:", "data_file_picker")
-        self.keywords_text = wx.TextCtrl(self.panel, style=wx.TE_PROCESS_ENTER)
         self.process_button = wx.Button(self.panel, label="Process", size=(100, -1))
 
         self.Bind(wx.EVT_BUTTON, self.on_process, self.process_button)
